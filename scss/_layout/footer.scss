@@ -1,0 +1,21 @@
+.footer {
+  margin-bottom: 74px;
+  &__paragraph {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    font-family: $questrial;
+    color: #c3d0d8;
+    letter-spacing: 2px;
+    margin-bottom: 47px;
+    b {
+      color: $color-pink-ff;
+    }
+  }
+  &__social-media {
+    display: flex;
+    justify-content: space-between;
+    max-width: 152px;
+    margin: auto;
+  }
+}

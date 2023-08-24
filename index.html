@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNEAK</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="/"><img src="./assets/logo-sneak.png" alt="Logo" height="35px" class="header__logoImage"></a>
+      <div class="header__logoText">
+        <h3 class="header__logoText--title">SNEAK</h3>
+        <p class="header__logoText--subtitle">CREATIVE PORTOFLIO</p>
+      </div>
+    </div>
+    <div class="header__navGroup close">
+      <nav>
+        <ul class="main_menuGroup">
+          <li class="main_menuItem main_menuItem--selected"><button onclick="filterCategory('all')">All</button></li>
+          <li class="main_menuItem"><button onclick="filterCategory('branding')">Branding</button></li>
+          <li class="main_menuItem"><button onclick="filterCategory('web')">Web</button></li>
+          <li class="main_menuItem"><button onclick="filterCategory('photography')">Photography</button></li>
+          <li class="main_menuItem"><button onclick="filterCategory('app')">App</button></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input id="input-search" class="search__input hide" placeholder="Search..." type="text">
+        <button onclick="toogleSearch()" class="search__button" type="button"><img
+            src="./assets/logo-search.svg"></button>
+      </div>
+    </div>
+    <div class="header__menu-mobile">
+      <button onclick="toogleMenu()">
+        <span class="line-menu" id="line-menu-top"></span>
+        <span class="line-menu" id="line-menu-center"></span>
+        <span class="line-menu" id="line-menu-bottom"></span>
+      </button>
+    </div>
+  </header>
+  <section class="content">
+    <section class="content__homeBannerMain">
+      <h1 class="content__homeBannerMain--title">EXPLORE BEYOND HORIZON</h1>
+      <h2 class="content__homeBannerMain--subtitle">Magna mundi referrentur quo, no rebum dignissim qui. Per
+        quodsi accusata id, agam labores.</h2>
+      <button type="button" class="content__homeBannerMain--button">VIEW OUR WORK</button>
+    </section>
+    <section class="content__homeGalleryImages">
+      <div class="layouts">
+        <button type="button" id="grid-button" class="layouts__item layouts__item--selected"
+          onclick="toogleGallery('grid')"><img src="./assets/grid.svg"></button>
+        <button type="button" id="list-button" class="layouts__item" onclick="toogleGallery('list')"><img
+            src="./assets/list.svg"></button>
+      </div>
+      <div class="container-menu">
+        <button id="prevButton"><img src="./assets/arrow_left.svg"></button>
+        <nav class="slider-nav">
+          <ul class="main_menuGroup" id="slider">
+            <li class="main_menuItem main_menuItem--selected"><button onclick="filterCategory('all')">All</button></li>
+            <li class="main_menuItem"><button onclick="filterCategory('branding')">Branding</button></li>
+            <li class="main_menuItem"><button onclick="filterCategory('web')">Web</button></li>
+            <li class="main_menuItem"><button onclick="filterCategory('photography')">Photography</button></li>
+            <li class="main_menuItem"><button onclick="filterCategory('app')">App</button></li>
+          </ul>
+        </nav>
+        <button id="nextButton"><img src="./assets/arrow_rigth.svg"></button>
+      </div>
+      <div class="container massonry" id="gallery"></div>
+    </section>
+    <div class="content__button-show-more">
+      <button class="content__button-more" onclick="counterPage()">Show Me More</button>
+    </div>
+  </section>
+  <footer class="footer">
+    <p class="footer__paragraph">© 2016 - <b>Sneak </b> All Right Reserved</p>
+    <section class="footer__social-media">
+      <a href="#"><img src="./assets/logo-facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="./assets/twitter.svg" alt=""></a>
+      <a href="#"><img src="./assets/dribble-big-logo.svg" alt=""></a>
+      <a href="#"><img src="./assets/google-plus-logo.svg" alt=""></a>
+      <a href="#"><img src="./assets/youtube-logo.svg" alt=""></a>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
